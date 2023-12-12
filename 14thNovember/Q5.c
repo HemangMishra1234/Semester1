@@ -36,13 +36,13 @@ void swap(int *a, int *b){
     *b = temp;
 }
 
-void printArray(int a[], int len){
+void printArray(int *a, int len){
     int i = 0;
     printf("Printing the elements of the array\n");
     for (i = 0; i < len; i++)
     {
-        printf("%d \n", a[i]);
-        //a = a + sizeof(int);
+        printf("%d \n", *a);
+        a = a + 1;
     }
     
 }
